@@ -14,3 +14,5 @@ libraryDependencies ++= List(
 testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
 
 lazy val root = project in file(".")
+
+enablePlugins(JavaAppPackaging)
