@@ -1,6 +1,6 @@
 name         := "mxt_finance"
 version      := "0.1.0"
-scalaVersion := "2.13.8"
+scalaVersion := "3.1.3"
 
 val catsEffectV = "3.3.11"
 val zioVersion  = "2.0.0"

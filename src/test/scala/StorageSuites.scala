@@ -1,7 +1,7 @@
 import storage.Storage
-import zio.test.Assertion._
-import zio.test._
-import zio._
+import zio.test.Assertion.*
+import zio.test.*
+import zio.*
 
 object StorageSuites extends ZIOSpecDefault {
   def spec: Spec[TestEnvironment with Scope, Throwable] =
