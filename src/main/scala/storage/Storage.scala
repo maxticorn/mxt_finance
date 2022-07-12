@@ -17,4 +17,7 @@ class InMemoryStorage[K, V](ref: Ref[Map[K, V]]) extends Storage[K, V] {
 object Storage {
   def mkInMemory[K, V]: UIO[Storage[K, V]] =
     Ref.make(Map.empty[K, V]).map(new InMemoryStorage(_))
+
+  def inMemoryLayer[K: Tag, V: Tag]: ZLayer[Any, Nothing, Storage[K, V]] =
+    ZLayer.fromZIO(mkInMemory[K, V])
 }

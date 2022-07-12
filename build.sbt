@@ -1,13 +1,13 @@
-name := "mxt_finance"
-version := "0.1.0"
+name         := "mxt_finance"
+version      := "0.1.0"
 scalaVersion := "2.13.8"
 
 val catsEffectV = "3.3.11"
-val zioVersion = "1.0.14"
+val zioVersion  = "2.0.0"
 
 libraryDependencies ++= List(
-  "dev.zio" %% "zio" % zioVersion,
-  "dev.zio" %% "zio-test" % zioVersion % "test",
+  "dev.zio" %% "zio"          % zioVersion,
+  "dev.zio" %% "zio-test"     % zioVersion % "test",
   "dev.zio" %% "zio-test-sbt" % zioVersion % "test"
 )
 
